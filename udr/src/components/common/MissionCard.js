@@ -22,8 +22,8 @@ function MissionCard({ mission, isCompleted, onToggle }) {
           onClick={() => onToggle(mission.id)}
           className={`rounded-full px-4 py-2 text-sm font-medium transition ${
             isCompleted
-              ? 'bg-emerald-100 text-emerald-700'
-              : 'bg-slate-900 text-white'
+              ? 'bg-emerald-100 text-emerald-700' // 참일때 쓰임
+              : 'bg-slate-900 text-white' // 거짓일때 
           }`}
         >
           {isCompleted ? '완료' : '체크'}
